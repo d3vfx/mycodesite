@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progresso do Pedido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container progress-container">
+        <h1 id="progress-title">Esse é o Progresso do seu Pedido:</h1>
+        <div class="progress-bar">
+            <div class="stage" id="stage1">Processo Criativo</div>
+            <div class="stage" id="stage2">Produção</div>
+            <div class="stage" id="stage3">Entrega</div>
+        </div>
+        <div class="icon">✔️</div>
+        <div class="description" id="description"></div>
+        <a id="whatsapp-button" class="whatsapp-button" href="https://wa.me/5511950692673?text=Gostaria%20de%20avaliar%20o%20serviço" style="display: none;">Avaliar Serviço</a>
+    </div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const stage = urlParams.get('stage');
+        const orderCode = urlParams.get('code');
+        const stageDescriptions = {
+            1: "Seu projeto está na fase de processo criativo. Nessa etapa, estamos definindo os aspectos do produto para te entregar o melhor possível!",
+            2: "Seu projeto está na fase de produção. Estamos trabalhando duro para criar seu produto com a máxima qualidade!",
+            3: "Seu projeto está na fase de entrega. Estamos finalizando os últimos ajustes, você receberá novidades sobre a entrega em breve!"
+        };
+
+        if (stage === 'delivered') {
+            document.getElementById('progress-title').innerText = "Pedido Entregue";
+            document.getElementById('description').innerText = "Seu pedido foi entregue com sucesso!";
+            document.getElementById('whatsapp-button').style.display = 'inline-block';
+        } else {
+            for (let i = 1; i <= stage; i++) {
+                document.getElementById(`stage${i}`).classList.add('active');
+            }
+            document.getElementById('description').innerText = stageDescriptions[stage];
+        }
+    </script>
+</body>
+</html>

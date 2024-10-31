@@ -1,0 +1,264 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 200px;
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    border-radius: 5px; /* Arredonda as bordas */
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Arredonda as bordas */
+}
+
+.progress-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; /* Centraliza verticalmente os textos */
+    margin-top: 20px;
+    position: relative;
+}
+
+.stage {
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100px;
+    text-align: center;
+    border-radius: 5px; /* Arredonda as bordas */
+    background-color: white;
+    z-index: 1;
+    transition: transform 0.3s ease; /* Adiciona animação */
+}
+
+.stage.active {
+    background-color: #4caf50;
+    color: white;
+    transform: scale(1.1); /* Animação de escala */
+}
+
+.progress-container {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.progress-container h1 {
+    margin-bottom: 20px;
+}
+
+.progress-container .description {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.progress-container .icon {
+    font-size: 24px;
+    color: green;
+    margin-top: 10px;
+}
+
+.order-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.order-details h2 {
+    margin-bottom: 10px;
+}
+
+.order-details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-details ul li {
+    margin-bottom: 5px;
+}
+
+.whatsapp-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #25d366;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Regras existentes */
+
+@media (max-width: 600px) {
+    .progress-bar {
+        flex-direction: column;
+    }
+
+    .stage {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .order-details ul {
+        padding-left: 0;
+    }
+
+    .order-details ul li {
+        text-align: left;
+    }
+}
+
+/* Regras existentes */
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none; /* Esconde a mensagem de erro inicialmente */
+}
+
+@media (max-width: 600px) {
+    .progress-bar {
+        flex-direction: column;
+    }
+
+    .stage {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .order-details ul {
+        padding-left: 0;
+    }
+
+    .order-details ul li {
+        text-align: left;
+    }
+}
+
+/* Regras existentes */
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none; /* Esconde a mensagem de erro inicialmente */
+}
+
+.service-status {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.service-status h3 {
+    margin-bottom: 10px;
+}
+
+.service-status .status {
+    color: green;
+    font-size: 14px;
+}
+
+.service-status .timestamp {
+    font-size: 12px;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .progress-bar {
+        flex-direction: column;
+    }
+
+    .stage {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .order-details ul {
+        padding-left: 0;
+    }
+
+    .order-details ul li {
+        text-align: left;
+    }
+}
+
+/* Regras existentes */
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    display: none; /* Esconde a mensagem de erro inicialmente */
+}
+
+.service-status {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid orange;
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-status h3 {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.service-status .status {
+    color: orange;
+    font-size: 14px;
+}
+
+.service-status .timestamp {
+    font-size: 12px;
+    color: gray;
+}
+
+@media (max-width: 600px) {
+    .progress-bar {
+        flex-direction: column;
+    }
+
+    .stage {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .order-details ul {
+        padding-left: 0;
+    }
+
+    .order-details ul li {
+        text-align: left;
+    }
+}
+
+.Funcao {
+  position: flex;
+    margin-bottom: 10px;
+    max-width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: #f9f9f9;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
