@@ -1,11 +1,46 @@
+/* Seu CSS existente */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #FFFAF3;
 }
+
+/* Novo CSS para o header */
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #FFF7ED; /* Cor de fundo opcional */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 0, 0, 35px, 35px;
+}
+
+.header-icon {
+    height: 80px; /* Ajusta a altura do ícone para a altura da primeira letra */
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.header-title {
+    font-family: 'Times New Roman', Times, serif; /* Fonte serifada */
+    font-size: 2em; /* Tamanho da fonte */
+    margin: 0;
+}
+
+/* Ajuste para o conteúdo abaixo do header */
+.content {
+    margin-top: 80px; /* Espaço para o header fixo */
+}
+
 
 .container {
     text-align: center;
@@ -17,12 +52,17 @@ input {
     width: 200px;
     text-align: center; /* Centraliza o texto dentro da caixa */
     border-radius: 5px; /* Arredonda as bordas */
+    background-color: #FFF7ED;
+    border-color: #E28E1A;
 }
 
 button {
+  color: white;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px; /* Arredonda as bordas */
+    background-color: #FFB650;
+    border-color: #E28E1A;
 }
 
 .progress-bar {
@@ -258,7 +298,7 @@ button {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px; /* Bordas arredondadas */
-    background-color: #f9f9f9;
+    background-color: #FFF7ED;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
