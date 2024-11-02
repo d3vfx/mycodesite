@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #FFFAF3;
+    background-color: #FFF6E6;
 }
 
 .container {
@@ -21,7 +21,7 @@ body {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 10px; /* Bordas arredondadas */
-    background-color: #FFF7ED;
+    background-color: #FFF1D7;
     text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

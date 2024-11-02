@@ -5,33 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewJes</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
-<header class="header">
-        <img src="https://i.postimg.cc/XJt3ydT2/41-Sem-T-tulo-20241031100014.png" alt="Ícone" class="header-icon">
-        <h1 class="header-title">NewJes Store</h1>
+    <nav>
+        <div class="menu-left">
+            <img src="/Icons pg inicial/menu.png" alt="Menu">
+        </div>
+        <div class="menu-center">
+            <img src="https://i.postimg.cc/XJt3ydT2/41-Sem-T-tulo-20241031100014.png" alt="Imagem Central">
+        </div>
+    </nav>
+    <header>
+       <div class="option" onclick="location.href='mural.html'">
+      <div class="mural">
+        <h1>Seja Bem Vindo!</h1>
+        <p>Seja Bem vindo, querido cliente. Estamos fazendo o possível para que seu atendimento seja perfeito do início ao fim!</p>
+      </div>
+      </div>
     </header>
-    <div class="content">
-    <div class="container">
-        <div class="option" onclick="location.href='mural.html'">
-        <div class="Funcao">
-            <h3>Mural de Avisos</h3>          
-        </div>
-        </div>
+    <section class="verificar código">
+      <div class="option" onclick="location.href='consulta.html'">
+       <div class="consulta"><h3><b>Consultar código</b></h3>
+       </div>
+       </div>
+    </section>
+<section class="grid-container">
+  <div class="grid-item">
+    <img src="/Icons pg inicial/comprar.png" alt="botão de compra">
+    <span class="label">Comprar</span>
+  </div>
+  <div class="grid-item">
+    <img src="/Icons pg inicial/ofertas.png" alt="botão de ofertas">
+    <span class="label">Ofertas</span>
+  </div>
+  <div class="grid-item">
+    <img src="/Icons pg inicial/cupons.png" alt="botão de cupons">
+    <span class="label">Cupom OFF</span>
+  </div>
+  <div class="grid-item">
+    <img src="/Icons pg inicial/ganhepontos.png" alt="botão para ganhar pontos">
+    <span class="label">Ganhe pontos</span>
+  </div>
+</section>
 
-        <div class="option" onclick="location.href='consulta.html'">
-          <div class="Funcao"
-            <h3>Consultar Código de Pedido</h3>
-            </div>
-        </div>
-        </div>
-
-    </div>
-    <div class="service-status">
-        <h3>Funcionamento do Serviço</h3>
-        <p class="status">Serviço funcionando com lentidão, atrasos curtos são possíveis.</p>
-        <p class="timestamp">Última atualização: 31/10/2024 06:28</p>
-    </div>
 </body>
 </html>
