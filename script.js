@@ -4,7 +4,7 @@ const stageDescriptions = {
     3: "Seu projeto está na fase de entrega. Estamos finalizando os últimos ajustes, você receberá novidades sobre a entrega em breve!"
 };
 
-const stage1Codes = ["No code"];
+const stage1Codes = ["72731"];
 const stage2Codes = ["", "03541"];
 const stage3Codes = ["54372"];
 const deliveredCodes = ["24245"]; // Exemplo de código para pedido entregue
