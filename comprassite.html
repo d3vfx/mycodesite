@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Fazer Compras no Site</title>
+  <link rel="stylesheet" href="pay.css">
+</head>
+<body>
+  <header id="header">
+    <h2>🛠️ Enquanto estamos atualizando nosso site, realizar compras diretamente por aqui ainda não é possível.</h2>
+    <p>Enquanto isso, você pode conversar com um de nossos atendentes através dos canais abaixo:</p>
+  </header>
+  <section class="Canalctt">
+    <div class="contato-disc">
+      <!--<img src="#" alt="Discord Link">-->
+      <h2><a href="https://discord.gg/WHEwfqcy">🤖 Discord</a></h2>
+    </div>
+   <div class="contato-inst">
+      <!--<img src="#" alt="Instagram Link">-->
+      <h2><a href="https://www.instagram.com/jes.jez?igsh=MWhxaGxraDZhZndqeg==">  📷 Instagram</a></h2>
+    </div>
+     <div class="contato-ema">
+      <!--<img src="#" alt="Email Link">-->
+      <h2><a href="mailto: receberpedidosjes@gmail.com?subject=Pedido%20de%20comissão&body=Antes de iniciar seu pedido, deixe listado: seu nome(como prefere ser chamado), seu contato principal (ex: Zap: número do seu zap[deixar o link para a forma de contato faz com que nosso retorno seja mais rápido e eficiente), Um resumo do pedido e depois comece a explicação mais técnica.    Esse texto pode ser apagado caso queira."">📧 Email</a></h2>
+    </div>  
+  </section>
+<script>
+    const header = document.getElementById('header');
+    let scrollDirection = 1; // 1 para baixo, -1 para cima
+
+    function scrollHeader() {
+      header.scrollTop += scrollDirection;
+      if (header.scrollTop >= header.scrollHeight - header.clientHeight) {
+        scrollDirection = 0; // Para a rolagem
+        setTimeout(() => {
+          header.scrollTop = 0; // Reinicia a rolagem após 2 segundos
+          scrollDirection = 1; // Retoma a rolagem para baixo
+        }, 2000); // 2000 milissegundos = 2 segundos
+      }
+    }
+
+    setInterval(scrollHeader, 50); // Ajuste o intervalo conforme necessário
+  </script>
+</body>
+</html>

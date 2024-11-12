@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF6E6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+  max-height: 100px;
+  background-color: white;
+  border-radius: 15px;
+  border: 1px solid orange;
+  padding: 20px;
+  margin: 20px;
+  overflow: auto;
+  color: darkorange;
+}
+
+.contato-disc{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 350px;
+  background-color:#707BF3;
+  border-radius: 15px;
+  color:white;
+}
+
+.contato-inst{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 350px;
+  background-color:#FF93C4;
+  border-radius: 15px;
+  color:white;
+}
+
+.contato-ema{
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 350px;
+  background-color:#D8E2FF;
+  border-radius: 15px;
+  color:white;
+}
+
+.contato-disc, a{
+  text-decoration: none;
+  color:inherit;
+}
+
+.contato-disc, a{
+  color:white;
+}
