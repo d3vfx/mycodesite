@@ -6,8 +6,8 @@ const stageDescriptions = {
 
 const stage1Codes = ["72731"];
 const stage2Codes = ["", "03541"];
-const stage3Codes = ["54372"];
-const deliveredCodes = ["24245"]; // Exemplo de código para pedido entregue
+const stage3Codes = ["#"];
+const deliveredCodes = ["24245", "54372"]; // Exemplo de código para pedido entregue
 
 function checkOrder() {
     const orderCode = document.getElementById('orderCode').value;
